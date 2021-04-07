@@ -242,7 +242,7 @@ class job extends control
     {
         $status = $this->job->exec($id);
         if(dao::isError()) die(js::error(dao::getError()));
-//提交3
+//提交2
         $this->app->loadLang('compile');
         echo js::alert(sprintf($this->lang->job->sendExec, zget($this->lang->compile->statusList, $status)));
         die(js::reload('parent'));
