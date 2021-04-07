@@ -242,11 +242,7 @@ class job extends control
     {
         $status = $this->job->exec($id);
         if(dao::isError()) die(js::error(dao::getError()));
-<<<<<<< HEAD
 //注解
-=======
-
->>>>>>> cdc8d63940c0db9646eec9c5083c0439f23df3a3
         $this->app->loadLang('compile');
         echo js::alert(sprintf($this->lang->job->sendExec, zget($this->lang->compile->statusList, $status)));
         die(js::reload('parent'));
