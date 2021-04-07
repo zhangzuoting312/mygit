@@ -1,3 +1,3 @@
 <?php
-echo "测试"
-?>
+$name = 'cehsi';
+echo($name);
